@@ -1,0 +1,7 @@
+{
+  "name": "copy_to_primary_host",
+  "description": "Copy to PRIMARY selection",
+  "path": "HOME_PATH/.mozilla/native-messaging-hosts/copy_to_primary_host.py",
+  "type": "stdio",
+  "allowed_extensions": ["copy-to-primary@xavi-b.fr"]
+}

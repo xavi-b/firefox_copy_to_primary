@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Copy to PRIMARY",
+  "version": "1.1",
+  "description": "Mirrors clipboard copy to PRIMARY via native host.",
+  "permissions": ["nativeMessaging", "clipboardRead", "clipboardWrite"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content_script.js"]
+  }],
+  "web_accessible_resources": [
+    "page_script.js"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "copy-to-primary@xavi-b.fr",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}
